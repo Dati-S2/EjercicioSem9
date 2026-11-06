@@ -27,6 +27,7 @@ public class House : MonoBehaviour
     }
     public int GetUpgradeCost() // Método para obtener el costo de mejora según el nivel de la casa
     {
+        
         if (level == 1)
         {
             return 50;
@@ -58,7 +59,7 @@ public class House : MonoBehaviour
 
         return true;
     }
-        void UpdateHouseVisual() // Método para actualizar la apariencia de la casa según su nivel
+    void UpdateHouseVisual() // Método para actualizar la apariencia de la casa según su nivel
     {
         for (int i = 0; i < levelModels.Length; i++)
         {
